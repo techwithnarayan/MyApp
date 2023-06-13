@@ -8,7 +8,7 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor("#243B55"),
+      backgroundColor: Colors.black,
       appBar: AppBar(title: Text("About"),
       centerTitle: true,
       backgroundColor: Colors.transparent,
@@ -52,9 +52,21 @@ class AboutMe extends StatelessWidget {
                 height: 22
                           ),
               ),
-            Text("Flutter design \u{1F609}'", style: TextStyle(
+            Text("Made with \u{2764} by TechwithNarayan", style: TextStyle(
               color: Colors.white
             ),),
+            SizedBox(
+              height: 25,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage('assets/images/github-logo.png')),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15)
+              ),
+              height: 60,
+              width: 160,
+            )
           
           ],
         ),
